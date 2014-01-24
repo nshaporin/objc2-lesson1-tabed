@@ -14,7 +14,6 @@
 		B6A9BA4D188EE6BF006E5447 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA4C188EE6BF006E5447 /* main.m */; };
 		B6A9BA51188EE6BF006E5447 /* tabedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA50188EE6BF006E5447 /* tabedAppDelegate.m */; };
 		B6A9BA54188EE6BF006E5447 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BA52188EE6BF006E5447 /* Main.storyboard */; };
-		B6A9BA57188EE6BF006E5447 /* tabedFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA56188EE6BF006E5447 /* tabedFirstViewController.m */; };
 		B6A9BA5A188EE6BF006E5447 /* tabedSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA59188EE6BF006E5447 /* tabedSecondViewController.m */; };
 		B6A9BA5C188EE6BF006E5447 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BA5B188EE6BF006E5447 /* Images.xcassets */; };
 		B6A9BA63188EE6C0006E5447 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A9BA62188EE6C0006E5447 /* XCTest.framework */; };
@@ -22,6 +21,7 @@
 		B6A9BA65188EE6C0006E5447 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A9BA44188EE6BF006E5447 /* UIKit.framework */; };
 		B6A9BA6D188EE6C0006E5447 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BA6B188EE6C0006E5447 /* InfoPlist.strings */; };
 		B6A9BA6F188EE6C0006E5447 /* tabedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA6E188EE6C0006E5447 /* tabedTests.m */; };
+		B6A9BA7D1890247D006E5447 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA7C1890247D006E5447 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,6 @@
 		B6A9BA4F188EE6BF006E5447 /* tabedAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabedAppDelegate.h; sourceTree = "<group>"; };
 		B6A9BA50188EE6BF006E5447 /* tabedAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabedAppDelegate.m; sourceTree = "<group>"; };
 		B6A9BA53188EE6BF006E5447 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6A9BA55188EE6BF006E5447 /* tabedFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabedFirstViewController.h; sourceTree = "<group>"; };
-		B6A9BA56188EE6BF006E5447 /* tabedFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabedFirstViewController.m; sourceTree = "<group>"; };
 		B6A9BA58188EE6BF006E5447 /* tabedSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabedSecondViewController.h; sourceTree = "<group>"; };
 		B6A9BA59188EE6BF006E5447 /* tabedSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabedSecondViewController.m; sourceTree = "<group>"; };
 		B6A9BA5B188EE6BF006E5447 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +54,8 @@
 		B6A9BA6A188EE6C0006E5447 /* tabedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tabedTests-Info.plist"; sourceTree = "<group>"; };
 		B6A9BA6C188EE6C0006E5447 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6A9BA6E188EE6C0006E5447 /* tabedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabedTests.m; sourceTree = "<group>"; };
+		B6A9BA7B1890247D006E5447 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B6A9BA7C1890247D006E5447 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 				B6A9BA4F188EE6BF006E5447 /* tabedAppDelegate.h */,
 				B6A9BA50188EE6BF006E5447 /* tabedAppDelegate.m */,
 				B6A9BA52188EE6BF006E5447 /* Main.storyboard */,
-				B6A9BA55188EE6BF006E5447 /* tabedFirstViewController.h */,
-				B6A9BA56188EE6BF006E5447 /* tabedFirstViewController.m */,
+				B6A9BA7B1890247D006E5447 /* TableViewController.h */,
+				B6A9BA7C1890247D006E5447 /* TableViewController.m */,
 				B6A9BA58188EE6BF006E5447 /* tabedSecondViewController.h */,
 				B6A9BA59188EE6BF006E5447 /* tabedSecondViewController.m */,
 				B6A9BA5B188EE6BF006E5447 /* Images.xcassets */,
@@ -255,10 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A9BA57188EE6BF006E5447 /* tabedFirstViewController.m in Sources */,
 				B6A9BA5A188EE6BF006E5447 /* tabedSecondViewController.m in Sources */,
 				B6A9BA4D188EE6BF006E5447 /* main.m in Sources */,
 				B6A9BA51188EE6BF006E5447 /* tabedAppDelegate.m in Sources */,
+				B6A9BA7D1890247D006E5447 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +467,7 @@
 				B6A9BA74188EE6C0006E5447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6A9BA75188EE6C0006E5447 /* Build configuration list for PBXNativeTarget "tabedTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +476,7 @@
 				B6A9BA77188EE6C0006E5447 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

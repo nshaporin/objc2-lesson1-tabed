@@ -12,7 +12,50 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //Shadow
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0/255.0f green:0.0/255.0f blue:0.0/255.0f alpha:0.7f];
+    shadow.shadowOffset = CGSizeMake(0,0.5);
+    
+    //Tab Bar background color
+    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:200.0/255.0f
+                                                           green:200.0/255.0f
+                                                            blue:200.0/255.0f
+                                                           alpha:1.0f]];
+    //Tab Bar Text color Normal
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary
+                                                       dictionaryWithObjectsAndKeys:[UIColor colorWithRed:146.0/255.0f
+                                                                                                    green:146.0/255.0f
+                                                                                                     blue:146.0/255.0f
+                                                                                                    alpha:1.0f],
+                                                       NSForegroundColorAttributeName, shadow, NSShadowAttributeName,
+                                                       [UIFont fontWithName:@"Helvetica-Neue" size:12], NSFontAttributeName, nil]
+                                             forState:UIControlStateNormal];
+    //Tab Bar Text color Highlighted
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary
+                                                       dictionaryWithObjectsAndKeys:[UIColor colorWithRed:0.0/255.0f
+                                                                                                    green:122.0/255.0f
+                                                                                                     blue:255.0/255.0f
+                                                                                                    alpha:1.0f],
+                                                       NSForegroundColorAttributeName,
+                                                       [UIFont fontWithName:@"Helvetica-Neue" size:12], NSFontAttributeName, nil]
+                                             forState:UIControlStateHighlighted];
+    
+    //Navigation Bar background color
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:200.0/255.0f
+                                                                  green:200.0/255.0f
+                                                                   blue:200.0/255.0f
+                                                                  alpha:1.0f]];
+
+    //Navigation Bar Title color
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary
+                                                          dictionaryWithObjectsAndKeys:
+                                                          [UIColor colorWithRed:245.0/255.0f
+                                                                          green:245.0/255.0f
+                                                                           blue:245.0/255.0f
+                                                                          alpha:1.0f], NSForegroundColorAttributeName, shadow, NSShadowAttributeName,
+                                                          [UIFont fontWithName:@"Helvetica-Neue" size:16.0], NSFontAttributeName, nil]];
+    
     return YES;
 }
 							
