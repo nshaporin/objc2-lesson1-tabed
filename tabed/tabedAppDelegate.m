@@ -12,7 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    //stupid comment to test Git
     
     //Shadow
     NSShadow *shadow = [[NSShadow alloc] init];
