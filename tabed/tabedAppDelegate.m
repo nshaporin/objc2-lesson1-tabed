@@ -12,6 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //making bad changes
     
     //Shadow
     NSShadow *shadow = [[NSShadow alloc] init];
