@@ -7,12 +7,26 @@
 //
 
 #import "TableViewController.h"
+#import "tabedAppDelegate.h"
 
 @interface TableViewController ()
 
 @end
 
 @implementation TableViewController
+{
+    NSDictionary *res;
+}
+
+- (NSArray *)films
+{
+    tabedAppDelegate *AppDelegate = (tabedAppDelegate*)[[UIApplication sharedApplication] delegate];
+    return tabedAppDelegate.films;
+    
+
+}
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,7 +43,12 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:245.0/255.0f green:245.0/255.0f blue:245.0/255.0f alpha:1.0f];
     
+    NSDictionary *root = (NSDictionary *)[self films];
     
+    
+    
+    
+    NSLog(@"%@", [root allKeys]);
 }
 
 - (void)didReceiveMemoryWarning

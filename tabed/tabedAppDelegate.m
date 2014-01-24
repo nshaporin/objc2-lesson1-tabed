@@ -9,9 +9,19 @@
 #import "tabedAppDelegate.h"
 
 @implementation tabedAppDelegate
+{
+    NSArray *_films;
+}
+
+- (NSArray *) films
+{
+    return _films;
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
     
     //Shadow
     NSShadow *shadow = [[NSShadow alloc] init];
@@ -57,8 +67,31 @@
                                                                           alpha:1.0f], NSForegroundColorAttributeName, shadow, NSShadowAttributeName,
                                                           [UIFont fontWithName:@"Helvetica-Neue" size:16.0], NSFontAttributeName, nil]];
     
+    [self loadJSON];
+    
     return YES;
 }
+
+- (void) loadJSON
+{
+    NSString *path = @"http://lineto.ru/xmlTojson.php";
+    NSURL *url = [NSURL URLWithString:path];
+    NSString *dataJSON = [NSString stringWithContentsOfURL:url
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:nil];
+    
+    NSData *data = [dataJSON dataUsingEncoding:NSUTF8StringEncoding];
+    
+    _films = [NSJSONSerialization JSONObjectWithData:data
+                                             options:kNilOptions
+                                               error:nil];
+    
+    //NSLog(@"%@", dataJSON);
+}
+
+
+
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
