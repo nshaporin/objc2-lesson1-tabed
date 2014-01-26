@@ -22,6 +22,7 @@
 		B6A9BA6D188EE6C0006E5447 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BA6B188EE6C0006E5447 /* InfoPlist.strings */; };
 		B6A9BA6F188EE6C0006E5447 /* tabedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA6E188EE6C0006E5447 /* tabedTests.m */; };
 		B6A9BA7D1890247D006E5447 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BA7C1890247D006E5447 /* TableViewController.m */; };
+		B6A9BAC91895A77D006E5447 /* filmCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9BAC81895A77D006E5447 /* filmCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		B6A9BA6E188EE6C0006E5447 /* tabedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabedTests.m; sourceTree = "<group>"; };
 		B6A9BA7B1890247D006E5447 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B6A9BA7C1890247D006E5447 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B6A9BAC71895A77D006E5447 /* filmCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filmCell.h; sourceTree = "<group>"; };
+		B6A9BAC81895A77D006E5447 /* filmCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = filmCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				B6A9BA4F188EE6BF006E5447 /* tabedAppDelegate.h */,
 				B6A9BA50188EE6BF006E5447 /* tabedAppDelegate.m */,
 				B6A9BA52188EE6BF006E5447 /* Main.storyboard */,
+				B6A9BAC71895A77D006E5447 /* filmCell.h */,
+				B6A9BAC81895A77D006E5447 /* filmCell.m */,
 				B6A9BA7B1890247D006E5447 /* TableViewController.h */,
 				B6A9BA7C1890247D006E5447 /* TableViewController.m */,
 				B6A9BA58188EE6BF006E5447 /* tabedSecondViewController.h */,
@@ -257,6 +262,7 @@
 			files = (
 				B6A9BA5A188EE6BF006E5447 /* tabedSecondViewController.m in Sources */,
 				B6A9BA4D188EE6BF006E5447 /* main.m in Sources */,
+				B6A9BAC91895A77D006E5447 /* filmCell.m in Sources */,
 				B6A9BA51188EE6BF006E5447 /* tabedAppDelegate.m in Sources */,
 				B6A9BA7D1890247D006E5447 /* TableViewController.m in Sources */,
 			);

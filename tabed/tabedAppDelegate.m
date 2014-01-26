@@ -74,19 +74,19 @@
 
 - (void) loadJSON
 {
-    NSString *path = @"http://lineto.ru/xmlTojson.php";
-    NSURL *url = [NSURL URLWithString:path];
-    NSString *dataJSON = [NSString stringWithContentsOfURL:url
+    NSString *jsonSource = @"http://lineto.ru/xmlTojson.php";
+    NSURL *urlToSource = [NSURL URLWithString:jsonSource];
+    NSString *dataFromSource = [NSString stringWithContentsOfURL:urlToSource
                                                   encoding:NSUTF8StringEncoding
                                                      error:nil];
     
-    NSData *data = [dataJSON dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *usefulData = [dataFromSource dataUsingEncoding:NSUTF8StringEncoding];
     
-    _films = [NSJSONSerialization JSONObjectWithData:data
+    _films = [NSJSONSerialization JSONObjectWithData:usefulData
                                              options:kNilOptions
                                                error:nil];
     
-    //NSLog(@"%@", dataJSON);
+    //NSLog(@"%@", dataFromSource);
 }
 
 

@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "tabedAppDelegate.h"
+#import "filmCell.h"
 
 @interface TableViewController ()
 
@@ -15,15 +16,13 @@
 
 @implementation TableViewController
 {
-    NSDictionary *res;
+    NSDictionary *filmsList;
 }
 
 - (NSArray *)films
 {
-    tabedAppDelegate *AppDelegate = (tabedAppDelegate*)[[UIApplication sharedApplication] delegate];
-    return tabedAppDelegate.films;
-    
-
+    tabedAppDelegate *appDelegate = (tabedAppDelegate*)[[UIApplication sharedApplication] delegate];
+    return appDelegate.films;
 }
 
 
@@ -41,14 +40,14 @@
 {
     [super viewDidLoad];
     
+    //Table View Background color
     self.view.backgroundColor = [UIColor colorWithRed:245.0/255.0f green:245.0/255.0f blue:245.0/255.0f alpha:1.0f];
     
     NSDictionary *root = (NSDictionary *)[self films];
+    NSDictionary *objects = (NSDictionary *)[root objectForKey:@"cinema"];
+    filmsList = (NSDictionary*)[objects objectForKey:@"films"];
     
-    
-    
-    
-    NSLog(@"%@", [root allKeys]);
+    //NSLog(@"%@", [filmsList allKeys]);
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,24 +60,23 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+
+    return [filmsList[@"film"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    filmCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.titleLabel.text = filmsList[@"film"][indexPath.row][@"@name"];
+    
     
     return cell;
 }
