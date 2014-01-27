@@ -11,5 +11,7 @@
 @interface filmCell : UITableViewCell
 
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *directorLabel;
+@property (strong, nonatomic) IBOutlet UILabel *ratingLabel;
 
 @end

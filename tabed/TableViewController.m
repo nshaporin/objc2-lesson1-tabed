@@ -76,7 +76,8 @@
     filmCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     cell.titleLabel.text = filmsList[@"film"][indexPath.row][@"@name"];
-    
+    cell.directorLabel.text = filmsList[@"film"][indexPath.row][@"@director"];
+    //cell.ratingLabel.text = filmsList[@"film"][indexPath.row][@"lenght"];
     
     return cell;
 }
