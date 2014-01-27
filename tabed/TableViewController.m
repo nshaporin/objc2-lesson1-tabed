@@ -43,11 +43,15 @@
     //Table View Background color
     self.view.backgroundColor = [UIColor colorWithRed:245.0/255.0f green:245.0/255.0f blue:245.0/255.0f alpha:1.0f];
     
-    NSDictionary *root = (NSDictionary *)[self films];
-    NSDictionary *objects = (NSDictionary *)[root objectForKey:@"cinema"];
-    filmsList = (NSDictionary*)[objects objectForKey:@"films"];
+    //создаем словарь корневого уровня
+    NSDictionary *filmbaseDic = (NSDictionary *)[self films];
+    //создаем словарь ключей в ключе корня
+    NSDictionary *filmDic = (NSDictionary *)[filmbaseDic objectForKey:@"filmbase"];
+
+    filmsList = (NSDictionary*)[filmDic objectForKey:@"films"];
     
     //NSLog(@"%@", [filmsList allKeys]);
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,9 +79,9 @@
     static NSString *CellIdentifier = @"Cell";
     filmCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.titleLabel.text = filmsList[@"film"][indexPath.row][@"@name"];
-    cell.directorLabel.text = filmsList[@"film"][indexPath.row][@"@director"];
-    //cell.ratingLabel.text = filmsList[@"film"][indexPath.row][@"lenght"];
+    cell.titleLabel.text = filmsList[@"film"][indexPath.row][@"title"];
+    cell.directorLabel.text = filmsList[@"film"][indexPath.row][@"director"];
+    cell.ratingLabel.text = filmsList[@"film"][indexPath.row][@"rating"];
     
     return cell;
 }

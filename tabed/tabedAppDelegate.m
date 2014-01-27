@@ -74,7 +74,7 @@
 
 - (void) loadJSON
 {
-    NSString *jsonSource = @"http://lineto.ru/xmlTojson.php";
+    NSString *jsonSource = @"http://nshaporin.ru/filmslist.json";
     NSURL *urlToSource = [NSURL URLWithString:jsonSource];
     NSString *dataFromSource = [NSString stringWithContentsOfURL:urlToSource
                                                   encoding:NSUTF8StringEncoding
@@ -86,7 +86,7 @@
                                              options:kNilOptions
                                                error:nil];
     
-    //NSLog(@"%@", dataFromSource);
+    NSLog(@"%@", dataFromSource);
 }
 
 
