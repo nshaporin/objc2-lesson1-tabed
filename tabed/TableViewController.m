@@ -9,6 +9,8 @@
 #import "TableViewController.h"
 #import "tabedAppDelegate.h"
 #import "filmCell.h"
+#import "descriptionViewController.h"
+
 
 @interface TableViewController ()
 
@@ -50,7 +52,7 @@
 
     filmsList = (NSDictionary*)[filmDic objectForKey:@"films"];
     
-    //NSLog(@"%@", [filmsList allKeys]);
+    NSLog(@"%@", [filmsList allKeys]);
 
 }
 
@@ -82,6 +84,7 @@
     cell.titleLabel.text = filmsList[@"film"][indexPath.row][@"title"];
     cell.directorLabel.text = filmsList[@"film"][indexPath.row][@"director"];
     cell.ratingLabel.text = filmsList[@"film"][indexPath.row][@"rating"];
+    //cell.filmImage.image = filmsList[@"film"][indexPath.row][@"img"];
     
     return cell;
 }
@@ -125,16 +128,17 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
-// In a story board-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    descriptionViewController *descVC = (descriptionViewController *) segue.destinationViewController;
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    descVC.filmDesc = filmsList[@"film"][path.row];
+    
+    //NSLog(@"%i", path.row);
 }
 
- */
+
 
 @end

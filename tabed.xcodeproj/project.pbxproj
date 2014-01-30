@@ -39,6 +39,7 @@
 		B6A9BB0918967B93006E5447 /* AppIcon76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BAF918967B93006E5447 /* AppIcon76x76@2x.png */; };
 		B6A9BB0A18967B93006E5447 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BAFA18967B93006E5447 /* iTunesArtwork.png */; };
 		B6A9BB0B18967B93006E5447 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BAFB18967B93006E5447 /* iTunesArtwork@2x.png */; };
+		B6D8167B189A892F007603BC /* descriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D8167A189A892F007603BC /* descriptionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,8 @@
 		B6A9BAF918967B93006E5447 /* AppIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon76x76@2x.png"; sourceTree = "<group>"; };
 		B6A9BAFA18967B93006E5447 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		B6A9BAFB18967B93006E5447 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		B6D81679189A892F007603BC /* descriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptionViewController.h; sourceTree = "<group>"; };
+		B6D8167A189A892F007603BC /* descriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = descriptionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				B6A9BA4F188EE6BF006E5447 /* tabedAppDelegate.h */,
 				B6A9BA50188EE6BF006E5447 /* tabedAppDelegate.m */,
 				B6A9BA52188EE6BF006E5447 /* Main.storyboard */,
+				B6D81679189A892F007603BC /* descriptionViewController.h */,
+				B6D8167A189A892F007603BC /* descriptionViewController.m */,
 				B6A9BAC71895A77D006E5447 /* filmCell.h */,
 				B6A9BAC81895A77D006E5447 /* filmCell.m */,
 				B6A9BA7B1890247D006E5447 /* TableViewController.h */,
@@ -333,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A9BA5A188EE6BF006E5447 /* tabedSecondViewController.m in Sources */,
+				B6D8167B189A892F007603BC /* descriptionViewController.m in Sources */,
 				B6A9BA4D188EE6BF006E5447 /* main.m in Sources */,
 				B6A9BAC91895A77D006E5447 /* filmCell.m in Sources */,
 				B6A9BA51188EE6BF006E5447 /* tabedAppDelegate.m in Sources */,

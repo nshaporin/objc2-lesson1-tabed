@@ -13,5 +13,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *directorLabel;
 @property (strong, nonatomic) IBOutlet UILabel *ratingLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *filmImage;
 
 @end
