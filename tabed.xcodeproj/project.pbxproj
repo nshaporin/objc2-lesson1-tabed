@@ -40,6 +40,10 @@
 		B6A9BB0A18967B93006E5447 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BAFA18967B93006E5447 /* iTunesArtwork.png */; };
 		B6A9BB0B18967B93006E5447 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6A9BAFB18967B93006E5447 /* iTunesArtwork@2x.png */; };
 		B6D8167B189A892F007603BC /* descriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D8167A189A892F007603BC /* descriptionViewController.m */; };
+		B6D81684189BB2D6007603BC /* speaker32.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D81680189BB2D6007603BC /* speaker32.png */; };
+		B6D81685189BB2D6007603BC /* speaker32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D81681189BB2D6007603BC /* speaker32@2x.png */; };
+		B6D81686189BB2D6007603BC /* speaker32off.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D81682189BB2D6007603BC /* speaker32off.png */; };
+		B6D81687189BB2D6007603BC /* speaker32off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D81683189BB2D6007603BC /* speaker32off@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,10 @@
 		B6A9BAFB18967B93006E5447 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B6D81679189A892F007603BC /* descriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptionViewController.h; sourceTree = "<group>"; };
 		B6D8167A189A892F007603BC /* descriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = descriptionViewController.m; sourceTree = "<group>"; };
+		B6D81680189BB2D6007603BC /* speaker32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker32.png; sourceTree = "<group>"; };
+		B6D81681189BB2D6007603BC /* speaker32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speaker32@2x.png"; sourceTree = "<group>"; };
+		B6D81682189BB2D6007603BC /* speaker32off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker32off.png; sourceTree = "<group>"; };
+		B6D81683189BB2D6007603BC /* speaker32off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speaker32off@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,10 @@
 		B6A9BAEB18967B93006E5447 /* App_Icon_[Rounded] */ = {
 			isa = PBXGroup;
 			children = (
+				B6D81680189BB2D6007603BC /* speaker32.png */,
+				B6D81681189BB2D6007603BC /* speaker32@2x.png */,
+				B6D81682189BB2D6007603BC /* speaker32off.png */,
+				B6D81683189BB2D6007603BC /* speaker32off@2x.png */,
 				B6A9BAEC18967B93006E5447 /* AppIcon29x29.png */,
 				B6A9BAED18967B93006E5447 /* AppIcon29x29@2x.png */,
 				B6A9BAEE18967B93006E5447 /* AppIcon40x40.png */,
@@ -304,17 +316,21 @@
 				B6A9BB0418967B93006E5447 /* AppIcon60x60.png in Resources */,
 				B6A9BAFE18967B93006E5447 /* AppIcon40x40.png in Resources */,
 				B6A9BAFF18967B93006E5447 /* AppIcon40x40@2x.png in Resources */,
+				B6D81684189BB2D6007603BC /* speaker32.png in Resources */,
 				B6A9BAFD18967B93006E5447 /* AppIcon29x29@2x.png in Resources */,
 				B6A9BA4B188EE6BF006E5447 /* InfoPlist.strings in Resources */,
 				B6A9BB0A18967B93006E5447 /* iTunesArtwork.png in Resources */,
 				B6A9BB0118967B93006E5447 /* AppIcon50x50@2x.png in Resources */,
 				B6A9BA54188EE6BF006E5447 /* Main.storyboard in Resources */,
 				B6A9BB0218967B93006E5447 /* AppIcon57x57.png in Resources */,
+				B6D81687189BB2D6007603BC /* speaker32off@2x.png in Resources */,
 				B6A9BAFC18967B93006E5447 /* AppIcon29x29.png in Resources */,
 				B6A9BB0518967B93006E5447 /* AppIcon60x60@2x.png in Resources */,
 				B6A9BB0318967B93006E5447 /* AppIcon57x57@2x.png in Resources */,
 				B6A9BB0B18967B93006E5447 /* iTunesArtwork@2x.png in Resources */,
 				B6A9BB0018967B93006E5447 /* AppIcon50x50.png in Resources */,
+				B6D81686189BB2D6007603BC /* speaker32off.png in Resources */,
+				B6D81685189BB2D6007603BC /* speaker32@2x.png in Resources */,
 				B6A9BB0618967B93006E5447 /* AppIcon72x72.png in Resources */,
 				B6A9BB0718967B93006E5447 /* AppIcon72x72@2x.png in Resources */,
 				B6A9BB0918967B93006E5447 /* AppIcon76x76@2x.png in Resources */,

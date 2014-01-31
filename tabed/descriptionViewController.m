@@ -14,10 +14,11 @@
 
 @implementation descriptionViewController
 
-- (IBAction)backToFilms:(id)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+//Close Modal Action
+//- (IBAction)backToFilms:(id)sender
+//{
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,11 +36,15 @@
     
     NSLog(@"%@", [_filmDesc allKeys]);
 
-    NSURL *imgUrl = [NSURL URLWithString:@"http://nshaporin.ru/filmimages/1.jpg"];
-    NSData *dataImg = [NSData dataWithContentsOfURL:imgUrl];
-    UIImage *uploadedImage = [UIImage imageWithData:dataImg];
-    _filmImage.image = uploadedImage;
+    //NSString *uploadUrl = _filmDesc[@"img"];
+    //NSURL *imgUrl = [NSURL URLWithString:uploadUrl];
+    //NSData *dataImg = [NSData dataWithContentsOfURL:imgUrl];
+    //UIImage *uploadedImage = [UIImage imageWithData:dataImg];
+    //_filmImage.image = uploadedImage;
     
+    _descText.text = _filmDesc[@"discription"];
+    [_descText sizeToFit];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,5 +52,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)readDescAction:(id)sender
+{
+    
+}
+
+
+
+
 
 @end

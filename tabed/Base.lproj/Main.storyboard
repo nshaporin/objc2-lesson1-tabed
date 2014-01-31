@@ -97,7 +97,7 @@
                                     <outlet property="filmImage" destination="kCg-gN-kfj" id="pmW-IS-ocT"/>
                                     <outlet property="ratingLabel" destination="rUe-S1-Gac" id="gBK-zL-a4W"/>
                                     <outlet property="titleLabel" destination="HP4-Oz-so8" id="NHe-xj-yqT"/>
-                                    <segue destination="dSS-oU-tIB" kind="modal" id="NGz-TM-B0N"/>
+                                    <segue destination="dSS-oU-tIB" kind="push" id="NGz-TM-B0N"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -124,29 +124,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-2I-5M1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="hUa-C4-276">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="mgu-Au-YqO">
-                                            <connections>
-                                                <action selector="backToFilms:" destination="dSS-oU-tIB" id="UlB-Cx-Ubo"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ySD-mW-rqp">
-                                <rect key="frame" x="60" y="90" width="200" height="300"/>
+                            <textView clipsSubviews="YES" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="TopLeft" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbs-Jb-hJO">
+                                <rect key="frame" x="20" y="126" width="280" height="171"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ES-g8-BdJ">
+                                <rect key="frame" x="268" y="84" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="speaker32.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readDescAction:" destination="dSS-oU-tIB" eventType="touchUpInside" id="Vla-fg-xs6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="nRZ-rA-Ri4"/>
                     <connections>
-                        <outlet property="filmImage" destination="ySD-mW-rqp" id="KSc-MF-nBX"/>
+                        <outlet property="descText" destination="zbs-Jb-hJO" id="Wqf-NR-szq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1H-sd-9z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,6 +175,7 @@
         <!--Navigation Controller - Таб 1-->
         <scene sceneID="sWQ-Rq-aD5">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpX-DV-wds" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yfn-SH-dfp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Таб 1" image="first" id="Z7h-1E-pvt"/>
                     <toolbarItems/>
@@ -187,7 +188,6 @@
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="rootViewController" id="df1-LJ-SwS"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mpX-DV-wds" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
@@ -195,6 +195,7 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="speaker32.png" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -84,7 +84,12 @@
     cell.titleLabel.text = filmsList[@"film"][indexPath.row][@"title"];
     cell.directorLabel.text = filmsList[@"film"][indexPath.row][@"director"];
     cell.ratingLabel.text = filmsList[@"film"][indexPath.row][@"rating"];
-    //cell.filmImage.image = filmsList[@"film"][indexPath.row][@"img"];
+    
+    NSString *uploadUrl = filmsList[@"film"][indexPath.row][@"img"];
+    NSURL *imgUrl = [NSURL URLWithString:uploadUrl];
+    NSData *dataImg = [NSData dataWithContentsOfURL:imgUrl];
+    UIImage *uploadedImage = [UIImage imageWithData:dataImg];
+    cell.filmImage.image = uploadedImage;
     
     return cell;
 }

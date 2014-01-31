@@ -11,5 +11,8 @@
 @interface descriptionViewController : UIViewController
 @property (nonatomic, strong) NSDictionary *filmDesc;
 @property (strong, nonatomic) IBOutlet UIImageView *filmImage;
+@property (strong, nonatomic) IBOutlet UILabel *descLabel;
+@property (strong, nonatomic) IBOutlet UITextView *descText;
+- (IBAction)readDescAction:(id)sender;
 
 @end
